@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EF2447272026F92B004CE3E0 /* SecondFlipViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2447262026F92B004CE3E0 /* SecondFlipViewController.swift */; };
 		EF7424692026A468000AE7C8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF7424682026A468000AE7C8 /* AppDelegate.swift */; };
 		EF74246B2026A468000AE7C8 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF74246A2026A468000AE7C8 /* FirstViewController.swift */; };
 		EF74246D2026A468000AE7C8 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF74246C2026A468000AE7C8 /* SecondViewController.swift */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		EF2447262026F92B004CE3E0 /* SecondFlipViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondFlipViewController.swift; sourceTree = "<group>"; };
 		EF7424652026A468000AE7C8 /* ikid.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ikid.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF7424682026A468000AE7C8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EF74246A2026A468000AE7C8 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -62,6 +64,7 @@
 				EF74246A2026A468000AE7C8 /* FirstViewController.swift */,
 				EF74246C2026A468000AE7C8 /* SecondViewController.swift */,
 				EF74246E2026A468000AE7C8 /* Main.storyboard */,
+				EF2447262026F92B004CE3E0 /* SecondFlipViewController.swift */,
 				EF74247C2026A4C5000AE7C8 /* FirstFlipViewController.swift */,
 				EF7424712026A468000AE7C8 /* Assets.xcassets */,
 				EF7424732026A468000AE7C8 /* LaunchScreen.storyboard */,
@@ -146,6 +149,7 @@
 				EF7424692026A468000AE7C8 /* AppDelegate.swift in Sources */,
 				EF74247D2026A4C5000AE7C8 /* FirstFlipViewController.swift in Sources */,
 				EF74246B2026A468000AE7C8 /* FirstViewController.swift in Sources */,
+				EF2447272026F92B004CE3E0 /* SecondFlipViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
