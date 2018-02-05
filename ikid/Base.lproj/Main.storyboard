@@ -235,23 +235,32 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bison (Bye, son)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SCi-E4-9XK">
-                                <rect key="frame" x="224.5" y="170" width="218" height="35"/>
+                                <rect key="frame" x="224.5" y="320" width="218" height="35"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="30"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bison" translatesAutoresizingMaskIntoConstraints="NO" id="0Yr-Ed-GCt">
+                                <rect key="frame" x="208.5" y="62.5" width="250" height="250"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="250" id="Xrp-30-aqE"/>
+                                    <constraint firstAttribute="height" constant="250" id="bkg-Dr-2tD"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="SCi-E4-9XK" firstAttribute="centerX" secondItem="8ZP-vQ-RlN" secondAttribute="centerX" id="Kzs-4B-JUw"/>
-                            <constraint firstItem="SCi-E4-9XK" firstAttribute="centerY" secondItem="8ZP-vQ-RlN" secondAttribute="centerY" id="uJG-IC-Tdd"/>
+                            <constraint firstItem="SCi-E4-9XK" firstAttribute="centerX" secondItem="8ZP-vQ-RlN" secondAttribute="centerX" id="2Yd-uV-IOg"/>
+                            <constraint firstItem="0Yr-Ed-GCt" firstAttribute="centerX" secondItem="8ZP-vQ-RlN" secondAttribute="centerX" id="Eh6-lQ-dG7"/>
+                            <constraint firstItem="8ZP-vQ-RlN" firstAttribute="bottom" secondItem="SCi-E4-9XK" secondAttribute="bottom" constant="20" id="hdJ-Zh-DU3"/>
+                            <constraint firstItem="0Yr-Ed-GCt" firstAttribute="centerY" secondItem="8ZP-vQ-RlN" secondAttribute="centerY" id="p6D-bI-k98"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="8ZP-vQ-RlN"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EDw-pX-I5r" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1485" y="368"/>
+            <point key="canvasLocation" x="1484" y="367.46626686656674"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="yl2-sM-qoP">
@@ -274,6 +283,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="bison" width="960" height="480"/>
         <image name="first" width="30" height="30"/>
         <image name="second" width="30" height="30"/>
     </resources>
