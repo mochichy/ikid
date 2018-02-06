@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="49e-Tb-3d3">
-    <device id="retina4_7" orientation="landscape">
+    <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -20,29 +20,29 @@
             <objects>
                 <viewController id="9pv-A4-QxB" customClass="FirstViewController" customModule="ikid" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="tsR-hK-woN">
-                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="Good Joke" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="KQZ-1w-vlD">
-                                <rect key="frame" x="250" y="31" width="167" height="43"/>
+                                <rect key="frame" x="104" y="51" width="167" height="43"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="36"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="What did 0 say to 8?" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="78C-kq-bze">
+                                <rect key="frame" x="63" y="190" width="249" height="332"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="25"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QGi-ql-nR1">
-                                <rect key="frame" x="619" y="0.0" width="32" height="30"/>
+                                <rect key="frame" x="327" y="560" width="32" height="30"/>
                                 <state key="normal" title="Next"/>
                                 <connections>
                                     <action selector="btnNext:" destination="9pv-A4-QxB" eventType="touchUpInside" id="dET-ty-bfv"/>
                                 </connections>
                             </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="What did 0 say to 8?" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="78C-kq-bze">
-                                <rect key="frame" x="63" y="170" width="541" height="77"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="25"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -50,9 +50,9 @@
                             <constraint firstItem="78C-kq-bze" firstAttribute="top" secondItem="KQZ-1w-vlD" secondAttribute="bottom" constant="96" id="94W-Rk-DYw"/>
                             <constraint firstItem="PQr-Ze-W5v" firstAttribute="trailing" secondItem="78C-kq-bze" secondAttribute="trailing" constant="63" id="ElA-MT-Xtd"/>
                             <constraint firstItem="PQr-Ze-W5v" firstAttribute="trailing" secondItem="QGi-ql-nR1" secondAttribute="trailing" constant="16" id="Wi6-SX-rtP"/>
-                            <constraint firstItem="QGi-ql-nR1" firstAttribute="top" secondItem="PQr-Ze-W5v" secondAttribute="top" id="ZWy-8t-7s2"/>
                             <constraint firstItem="78C-kq-bze" firstAttribute="leading" secondItem="PQr-Ze-W5v" secondAttribute="leading" constant="63" id="h4z-gE-V9P"/>
                             <constraint firstItem="KQZ-1w-vlD" firstAttribute="centerX" secondItem="PQr-Ze-W5v" secondAttribute="centerX" id="lKb-lc-vlT"/>
+                            <constraint firstItem="PQr-Ze-W5v" firstAttribute="bottom" secondItem="QGi-ql-nR1" secondAttribute="bottom" constant="28" id="qoP-Rh-XYg"/>
                             <constraint firstItem="PQr-Ze-W5v" firstAttribute="bottom" secondItem="78C-kq-bze" secondAttribute="bottom" constant="96" id="sTb-HX-y1z"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="PQr-Ze-W5v"/>
@@ -72,11 +72,11 @@
             <objects>
                 <viewController storyboardIdentifier="FirstFlip" id="mNy-yd-uQ0" customClass="FirstFlipViewController" customModule="ikid" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="2DR-fO-b6V">
-                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="Nice Belt :)" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="ZJw-CY-pPY">
-                                <rect key="frame" x="249.5" y="166" width="168" height="43"/>
+                                <rect key="frame" x="103.5" y="322" width="168" height="43"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="36"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -100,39 +100,39 @@
             <objects>
                 <viewController id="Qba-Pm-nCY" customClass="ThirdViewController" customModule="ikid" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="oGT-1Q-1OY">
-                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nfo-4f-COW">
-                                <rect key="frame" x="612" y="0.0" width="32" height="30"/>
-                                <state key="normal" title="Next"/>
-                                <connections>
-                                    <action selector="btnNext:" destination="Qba-Pm-nCY" eventType="touchUpInside" id="D6U-LN-2oL"/>
-                                </connections>
-                            </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="Puns Joke " textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="uF9-Id-0yh">
-                                <rect key="frame" x="250" y="90" width="167" height="43"/>
+                                <rect key="frame" x="98.5" y="110" width="167" height="43"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="36"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Did you hear about the guy whose whole left side was cut off?" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="AUN-ag-tLU">
-                                <rect key="frame" x="42" y="194" width="583" height="104"/>
+                                <rect key="frame" x="42" y="214" width="280" height="359"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="25"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nfo-4f-COW">
+                                <rect key="frame" x="327" y="561" width="32" height="30"/>
+                                <state key="normal" title="Next"/>
+                                <connections>
+                                    <action selector="btnNext:" destination="Qba-Pm-nCY" eventType="touchUpInside" id="D6U-LN-2oL"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="Lvv-KG-26w" firstAttribute="trailing" secondItem="AUN-ag-tLU" secondAttribute="trailing" constant="42" id="BUv-0z-qCU"/>
+                            <constraint firstItem="Lvv-KG-26w" firstAttribute="trailing" secondItem="AUN-ag-tLU" secondAttribute="trailing" constant="53" id="BUv-0z-qCU"/>
+                            <constraint firstItem="Lvv-KG-26w" firstAttribute="trailing" secondItem="nfo-4f-COW" secondAttribute="trailing" constant="16" id="DW4-Yg-Z8B"/>
                             <constraint firstItem="AUN-ag-tLU" firstAttribute="centerX" secondItem="uF9-Id-0yh" secondAttribute="centerX" id="DkH-53-ERd"/>
                             <constraint firstItem="AUN-ag-tLU" firstAttribute="top" secondItem="uF9-Id-0yh" secondAttribute="bottom" constant="61" id="GnJ-Co-SSf"/>
                             <constraint firstItem="AUN-ag-tLU" firstAttribute="leading" secondItem="Lvv-KG-26w" secondAttribute="leading" constant="42" id="MuB-2i-wK1"/>
+                            <constraint firstItem="Lvv-KG-26w" firstAttribute="bottom" secondItem="nfo-4f-COW" secondAttribute="bottom" constant="27" id="Srb-3K-05F"/>
                             <constraint firstItem="uF9-Id-0yh" firstAttribute="top" secondItem="Lvv-KG-26w" secondAttribute="top" constant="90" id="auV-u4-0xf"/>
-                            <constraint firstItem="nfo-4f-COW" firstAttribute="top" secondItem="Lvv-KG-26w" secondAttribute="top" id="kOj-IN-yA6"/>
-                            <constraint firstItem="Lvv-KG-26w" firstAttribute="trailing" secondItem="nfo-4f-COW" secondAttribute="trailing" constant="23" id="kPC-cm-Nq9"/>
                             <constraint firstItem="Lvv-KG-26w" firstAttribute="bottom" secondItem="AUN-ag-tLU" secondAttribute="bottom" constant="45" id="r8v-uU-YMX"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Lvv-KG-26w"/>
@@ -152,11 +152,11 @@
             <objects>
                 <viewController storyboardIdentifier="ThirdFlip" id="Z0N-PO-e33" customClass="ThirdFlipViewController" customModule="ikid" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="L0M-ts-jQS">
-                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="He's all right now." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pws-mQ-DXh">
-                                <rect key="frame" x="214" y="170" width="239" height="35"/>
+                                <rect key="frame" x="68" y="326" width="239" height="35"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="30"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -179,40 +179,40 @@
             <objects>
                 <viewController id="8rJ-Kc-sve" customClass="SecondViewController" customModule="ikid" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="QS5-Rx-YEW">
-                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jJw-KX-to9">
-                                <rect key="frame" x="612" y="0.0" width="32" height="30"/>
-                                <state key="normal" title="Next"/>
-                                <connections>
-                                    <action selector="btnNext:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="S1P-kD-I1Y"/>
-                                </connections>
-                            </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="What did the buffalo say to his son when he left for college?" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Sn7-mE-M7e">
-                                <rect key="frame" x="42" y="183" width="583" height="148"/>
+                                <rect key="frame" x="42" y="203" width="278" height="403"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="25"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="Dad Joke" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="zEq-FU-wV5">
-                                <rect key="frame" x="261" y="48" width="145" height="43"/>
+                                <rect key="frame" x="109" y="68" width="145" height="43"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="36"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jJw-KX-to9">
+                                <rect key="frame" x="327" y="566" width="32" height="30"/>
+                                <state key="normal" title="Next"/>
+                                <connections>
+                                    <action selector="btnNext:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="S1P-kD-I1Y"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="jJw-KX-to9" firstAttribute="top" secondItem="O1u-W8-tvY" secondAttribute="top" id="3Oh-p4-sbb"/>
+                            <constraint firstItem="O1u-W8-tvY" firstAttribute="bottom" secondItem="Sn7-mE-M7e" secondAttribute="bottom" constant="12" id="Aos-57-Zzm"/>
                             <constraint firstItem="zEq-FU-wV5" firstAttribute="top" secondItem="O1u-W8-tvY" secondAttribute="top" constant="48" id="BBo-zh-Tms"/>
                             <constraint firstItem="Sn7-mE-M7e" firstAttribute="centerX" secondItem="zEq-FU-wV5" secondAttribute="centerX" id="Bxc-4V-f4P"/>
-                            <constraint firstItem="O1u-W8-tvY" firstAttribute="bottom" secondItem="Sn7-mE-M7e" secondAttribute="bottom" constant="12" id="RA8-ms-EFB"/>
-                            <constraint firstItem="O1u-W8-tvY" firstAttribute="trailing" secondItem="Sn7-mE-M7e" secondAttribute="trailing" constant="42" id="fiQ-55-qD4"/>
+                            <constraint firstItem="O1u-W8-tvY" firstAttribute="trailing" secondItem="jJw-KX-to9" secondAttribute="trailing" constant="16" id="C1o-1R-y7E"/>
+                            <constraint firstItem="O1u-W8-tvY" firstAttribute="bottom" secondItem="jJw-KX-to9" secondAttribute="bottom" constant="22" id="EGW-wd-6rg"/>
+                            <constraint firstItem="O1u-W8-tvY" firstAttribute="trailing" secondItem="Sn7-mE-M7e" secondAttribute="trailing" constant="55" id="ZRH-HF-DA0"/>
                             <constraint firstItem="Sn7-mE-M7e" firstAttribute="leading" secondItem="O1u-W8-tvY" secondAttribute="leading" constant="42" id="i3Z-K9-c3a"/>
                             <constraint firstItem="Sn7-mE-M7e" firstAttribute="top" secondItem="zEq-FU-wV5" secondAttribute="bottom" constant="92" id="jnK-ki-pZB"/>
-                            <constraint firstItem="O1u-W8-tvY" firstAttribute="trailing" secondItem="jJw-KX-to9" secondAttribute="trailing" constant="23" id="qFz-2U-X2p"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="O1u-W8-tvY"/>
                     </view>
@@ -231,17 +231,17 @@
             <objects>
                 <viewController storyboardIdentifier="SecondFlip" id="vwv-YG-vvC" customClass="SecondFlipViewController" customModule="ikid" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="oao-rY-sHE">
-                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bison (Bye, son)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SCi-E4-9XK">
-                                <rect key="frame" x="224.5" y="320" width="218" height="35"/>
+                                <rect key="frame" x="78.5" y="612" width="218" height="35"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="30"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bison" translatesAutoresizingMaskIntoConstraints="NO" id="0Yr-Ed-GCt">
-                                <rect key="frame" x="208.5" y="62.5" width="250" height="250"/>
+                                <rect key="frame" x="62.5" y="218.5" width="250" height="250"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="250" id="Xrp-30-aqE"/>
                                     <constraint firstAttribute="height" constant="250" id="bkg-Dr-2tD"/>
