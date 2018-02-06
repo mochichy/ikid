@@ -10,7 +10,7 @@ import UIKit
 
 class FirstViewController: UIViewController {
 
-    @IBOutlet weak var firstTitle: UILabel!
+    //@IBOutlet weak var firstTitle: UILabel!
     @IBOutlet weak var firstJoke: UITextView!
     
     fileprivate var firstFlipViewController : FirstFlipViewController!
@@ -53,14 +53,14 @@ class FirstViewController: UIViewController {
     fileprivate func switchViewController(_ from: UIViewController?, to: UIViewController?) {
 
         if to != nil {
-            firstTitle.isHidden = true
+            //firstTitle.isHidden = true
             firstJoke.isHidden = true
             self.addChildViewController(to!)
             self.view.insertSubview(to!.view, at: 0)
             to!.didMove(toParentViewController: self)
         } else {
             firstJoke.isHidden = false
-            firstTitle.isHidden = false
+            //firstTitle.isHidden = false
             from!.willMove(toParentViewController: nil)
             from!.view.removeFromSuperview()
             from!.removeFromParentViewController()

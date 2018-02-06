@@ -11,7 +11,7 @@ import UIKit
 class ThirdViewController: UIViewController {
 
     @IBOutlet weak var thirdJoke: UITextView!
-    @IBOutlet weak var thirdTitle: UILabel!
+    //@IBOutlet weak var thirdTitle: UILabel!
     
     fileprivate var thirdFlipViewController : ThirdFlipViewController!
     
@@ -50,14 +50,14 @@ class ThirdViewController: UIViewController {
     fileprivate func switchViewController(_ from: UIViewController?, to: UIViewController?) {
         
         if to != nil {
-            thirdTitle.isHidden = true
+            //thirdTitle.isHidden = true
             thirdJoke.isHidden = true
             self.addChildViewController(to!)
             self.view.insertSubview(to!.view, at: 0)
             to!.didMove(toParentViewController: self)
         } else {
             thirdJoke.isHidden = false
-            thirdTitle.isHidden = false
+            //thirdTitle.isHidden = false
             from!.willMove(toParentViewController: nil)
             from!.view.removeFromSuperview()
             from!.removeFromParentViewController()
